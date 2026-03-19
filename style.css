@@ -1,0 +1,480 @@
+/* ================= */
+/* THEME COLOR */
+/* ================= */
+
+body{
+  background:#ffeaf3;
+  font-family:Arial, sans-serif;
+}
+
+/* ================= */
+/* HEADER */
+/* ================= */
+
+.site-header{
+display:flex;
+align-items:center;
+gap:18px;
+margin-bottom:25px;
+background:white;
+padding:15px 20px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(255,105,180,0.15);
+}
+
+.site-logo{
+width:65px;
+height:65px;
+border-radius:14px;
+object-fit:cover;
+}
+
+.site-title h1{
+margin:0;
+font-size:28px;
+font-weight:800;
+color:#e75480;
+letter-spacing:2px;
+}
+
+.site-title p{
+margin:0;
+font-size:14px;
+color:#888;
+}
+
+.section-title{
+color:#e75480;
+}
+
+img{
+width:60px;
+border-radius:6px;
+}
+
+.card{
+border-radius:12px;
+}
+
+/* ================= */
+/* TABLE AUTO FIT */
+/* ================= */
+
+table{
+background:white;
+width:max-content;
+table-layout:auto;
+border-collapse:collapse;
+}
+
+/* RESET WIDTH */
+.w-stt,
+.w-product,
+.w-supplier,
+.w-small,
+.w-price,
+.w-name,
+.w-sp,
+.w-phone,
+.w-address{
+  min-width:unset !important;
+  width:auto;
+}
+
+/* TEXT */
+
+.text-1{
+white-space:nowrap;
+}
+
+.text-2{
+white-space:normal;
+word-break:break-word;
+line-height:1.35;
+}
+
+/* ================= */
+/* TABLE STYLE */
+/* ================= */
+
+.table-wrap{
+overflow:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.05);
+background:white;
+}
+
+.product-wrap{
+max-height:760px;
+}
+
+.cart-wrap{
+max-height:280px;
+}
+
+.history-wrap{
+max-height:620px;
+overflow:auto;
+}
+
+/* cell */
+
+.table th,
+.table td{
+vertical-align:middle;
+padding:6px 8px;
+font-size:14px;
+white-space:nowrap;
+}
+
+/* ================= */
+/* PRODUCT TABLE */
+/* ================= */
+
+.product-wrap table td:nth-child(2),
+.product-wrap table th:nth-child(2){
+  min-width:220px;
+  white-space:normal;
+}
+
+.product-wrap table td:not(:nth-child(2)),
+.product-wrap table th:not(:nth-child(2)){
+  width:1%;
+  white-space:nowrap;
+}
+
+/* ================= */
+/* 🔥 HISTORY TABLE */
+/* ================= */
+
+.history-wrap table{
+  width:max-content;
+  table-layout:auto;
+}
+
+/* STT */
+.history-wrap td:nth-child(2),
+.history-wrap th:nth-child(2){
+  width:50px;
+  text-align:center;
+}
+
+/* TÊN KHÁCH */
+.history-wrap td:nth-child(3),
+.history-wrap th:nth-child(3){
+  min-width:120px;
+  max-width:160px;
+  white-space:normal;
+}
+
+/* TK NHẬN ĐƠN */
+.history-wrap td:nth-child(4),
+.history-wrap th:nth-child(4){
+  min-width:110px;
+  max-width:150px;
+  white-space:normal;
+}
+
+/* 🔥 SẢN PHẨM (KHÔNG CHO QUÁ TO) */
+.history-wrap td:nth-child(5),
+.history-wrap th:nth-child(5){
+  min-width:160px;
+  max-width:200px;   /* 👈 FIX QUAN TRỌNG */
+  white-space:normal;
+  word-break:break-word;
+  line-height:1.4;
+}
+
+/* 🔥 ĐỊA CHỈ */
+.history-wrap td:nth-child(6),
+.history-wrap th:nth-child(6){
+  min-width:150px;
+  max-width:220px;
+  white-space:normal;
+  word-break:break-word;
+}
+
+/* CÁC CỘT NHỎ (giá, số lượng...) */
+.history-wrap td:nth-child(n+7),
+.history-wrap th:nth-child(n+7){
+  width:70px;
+  text-align:center;
+  white-space:nowrap;
+}
+/* ================= */
+/* TABLE HEADER */
+/* ================= */
+
+.table thead th{
+position:sticky;
+top:0;
+background:#ffe4ef;
+color:#d63384;
+z-index:3;
+}
+
+table th:first-child,
+table td:first-child{
+position:sticky;
+left:0;
+background:white;
+z-index:2;
+}
+
+.table thead th:first-child{
+background:#f8fafc;
+z-index:4;
+}
+
+tbody tr:nth-child(even){
+background:#fcfcfd;
+}
+
+tbody tr:hover{
+background:#fff5fa;
+}
+
+/* ================= */
+/* SCROLLBAR */
+/* ================= */
+
+.table-wrap::-webkit-scrollbar{
+width:10px;
+height:10px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb{
+background:#cfd8e3;
+border-radius:10px;
+}
+
+.table-wrap::-webkit-scrollbar-track{
+background:#eef2f7;
+border-radius:10px;
+}
+
+/* ================= */
+/* CART TABLE */
+/* ================= */
+
+.cart-wrap{
+width:100%;
+overflow:auto;
+}
+
+.cart-wrap table{
+width:max-content;
+border-collapse:collapse;
+}
+
+.cart-wrap th,
+.cart-wrap td{
+white-space:nowrap;
+}
+
+.cart-wrap td:first-child{
+white-space:normal;
+}
+
+/* ================= */
+/* FORM + BUTTON */
+/* ================= */
+
+button{
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+transition:all 0.2s;
+}
+
+button:hover{
+transform:translateY(-1px);
+box-shadow:0 8px 16px rgba(0,0,0,0.18);
+}
+
+.btn-success{
+background:#ff6fa3;
+border:none;
+}
+
+.btn-success:hover{
+background:#ff4c8b;
+}
+
+.btn-primary{
+background:#f783ac;
+border:none;
+}
+
+.btn-primary:hover{
+background:#ff5c9e;
+}
+
+.btn-danger{
+background:#ff4d6d;
+border:none;
+}
+
+.form-control{
+border-radius:12px;
+border:1px solid #ffd1e4;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.form-control:focus{
+border-color:#ff6fa3;
+box-shadow:0 0 0 0.15rem rgba(255,111,163,0.25);
+}
+
+/* ================= */
+/* 3D CARD */
+/* ================= */
+
+.site-header,
+.table-wrap,
+.card,
+.invoice,
+.container{
+background:white;
+border-radius:16px;
+box-shadow:
+0 8px 18px rgba(0,0,0,0.08),
+0 2px 6px rgba(0,0,0,0.05);
+transition:all 0.25s ease;
+}
+
+.table-wrap:hover,
+.card:hover,
+.site-header:hover{
+transform:translateY(-2px);
+box-shadow:
+0 14px 28px rgba(0,0,0,0.12),
+0 6px 12px rgba(0,0,0,0.08);
+}
+
+/* ================= */
+/* PRINT */
+/* ================= */
+
+@page{
+size:A6;
+margin:10mm;
+}
+
+@media print{
+
+#rowOwner{
+display:none !important;
+}
+
+*{
+box-shadow:none !important;
+text-shadow:none !important;
+outline:none !important;
+}
+
+body *{
+visibility:hidden;
+}
+
+#printInvoice,
+#printInvoice *{
+visibility:visible;
+}
+
+#printInvoice{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+}
+
+#printInvoice table{
+display:table;
+width:100%;
+border-collapse:collapse;
+}
+
+#printInvoice tr{
+display:table-row;
+}
+
+#printInvoice th,
+#printInvoice td{
+display:table-cell;
+}
+
+.invoice-print{
+max-width:320px;
+margin:auto;
+font-family:Arial;
+font-size:13px;
+color:black;
+}
+
+.bill-table th{
+border-bottom:2px solid black;
+padding:4px;
+}
+
+.bill-table td{
+border-bottom:1px dashed #aaa;
+padding:4px;
+}
+
+.bill-total{
+text-align:right;
+font-weight:bold;
+margin-top:6px;
+}
+
+.thanks{
+text-align:center;
+margin-top:8px;
+}
+
+}
+
+/* ================= */
+/* INVOICE PREVIEW */
+/* ================= */
+
+.invoice-preview{
+background:#fff;
+border:1px dashed #ff9ecb;
+padding:15px;
+border-radius:12px;
+font-size:14px;
+}
+
+.invoice-preview table{
+width:auto !important;
+table-layout:auto !important;
+}
+
+.invoice-preview th:nth-child(1),
+.invoice-preview td:nth-child(1){
+white-space:normal;
+}
+
+.invoice-preview th:nth-child(2),
+.invoice-preview td:nth-child(2){
+width:40px;
+text-align:center;
+}
+
+.invoice-preview th:nth-child(3),
+.invoice-preview td:nth-child(3){
+width:65px;
+text-align:right;
+}
+
+.invoice-preview td,
+.invoice-preview th{
+padding:4px;
+font-size:12px;
+}
+
+/* Ẩn hóa đơn in */
+#printInvoice{
+display:none;
+}
